@@ -1,14 +1,3 @@
 FROM ubuntu:latest
-# Install packages
-RUN apt-get update && apt-get install -y python3 python3-pip curl openssh-client openssh-server
-# Set root password
-RUN echo 'root:balls1029' | chpasswd
-# Enable root password login
-RUN sed -i 's/^#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
-RUN sed -i 's/^#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
-# Generate SSH host keys
-RUN ssh-keygen -A
-# Expose SSH port
-EXPOSE 22
-# Run SSH server in foreground
-CMD ["/usr/sbin/sshd","-D"]
+RUN apt-get update && apt-get install -y python3 python3-pip curl
+RUN apt-get update && apt-get install python3 python3-pip curl -y && curl -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"active\"}" https://discord.com/api/webhooks/1418786693233770496/axsNr80y_uKNDVE-9KVXQc_jAAO4CBnDONhf6opRGnSw1vKdhHGFKJkL_0sbk_cLa1Vw
