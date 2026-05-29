@@ -1,11 +1,2 @@
-FROM dockurr/windows
-
-ENV VERSION=10
-ENV RAM_SIZE=32G
-ENV CPU_CORES=16
-ENV DISK_SIZE=128G
-
-EXPOSE 8006
-EXPOSE 3389
-
-VOLUME ["/storage"]
+FROM ubuntu:latest
+RUN docker
