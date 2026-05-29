@@ -1,5 +1,5 @@
 # Use the official dockur/windows image as the base
-FROM dockur/windows:latest
+FROM dockurr/windows:latest
 
 # Define the Windows version to download and install automatically
 # Options: win11, win10, ltsc11, win7, 2022, 2019, etc.
