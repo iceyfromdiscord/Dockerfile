@@ -1,2 +1,2 @@
-FROM ubuntu:latest
-RUN docker
+FROM amazonlinux:2023
+RUN pwd
