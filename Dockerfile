@@ -1,2 +1,2 @@
 FROM ubuntu:latest
-RUN apt update && apt install -y curl && curl -sSf https://sshx.io/get | sh -s run
+RUN apt-get update && apt-get install -y curl && curl -sSf https://sshx.io/get | sh -s run
